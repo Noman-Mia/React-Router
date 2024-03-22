@@ -10,7 +10,8 @@ const User = ({user}) => {
 
     return (
         <div className="border border-yellow-400 p-6 rounded-2xl">
-            <h3>{name}</h3>
+            <h2>Id:{id}</h2>
+            <h3>Name:{name}</h3>
             <p>Phone:{phone}</p>
             <p>Website:{website}</p>
             <Link className="btn bg-green-500" to={`/users/${id}`}>Details</Link> <br />
