@@ -1,12 +1,13 @@
-import { useLoaderData, useNavigate } from "react-router-dom";
+import { useLoaderData, useNavigate, useParams } from "react-router-dom";
 
 const UsersDetails = () => {
 
    const user = useLoaderData();
-    
+    const params = useParams();
    const navigate = useNavigate();
    const handleGoBack = () =>{
     navigate(-1)
+    console.log(params );
    }
     return (
         <div className="text-center">
